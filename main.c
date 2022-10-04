@@ -5,22 +5,20 @@
 
 int main(int argc, char *argv[]) {
 	int num=0;
-	 
-	printf("정수하나를 입력하시오:");
+	int m=0;
+	
+	printf("정수 하나를 입력하시오:");
 	scanf("%d",&num);
 	
 	if(num>0){
-		printf("양수입니다.\n");
-		 
+		printf("절대값은 %d입니다.",num);
 	}
-	
 	else if(num<0){
-		printf("음수입니다.\n");
-		
-	} 
-	
+		m=num*-1;
+		printf("절대값은 %d입니다.",m);
+	}
 	else{
-		printf("0 입니다.\n");
+		printf("0입니다.");
 	}
 	return 0;
 }
